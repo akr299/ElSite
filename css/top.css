@@ -1,0 +1,588 @@
+/* 共通 */
+.padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ヘッダー */
+
+body {}
+
+.header {
+    height: 80px;
+    display: flex;
+    /* 縦方向の並び順*/
+    /*
+        flex-start：上揃え（デフォルト）
+        flex-end：下揃え
+        center：中央揃え
+        baseline：ベースライン
+        stretch：伸縮
+        */
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.logo {}
+
+.logo_text {
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+ul.navi {
+    list-style: none;
+    display: flex;
+}
+
+li.item {
+    width: 140px;
+    text-align: center;
+
+}
+
+li.item>a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+/* /ヘッダー */
+
+/* top */
+.top_area {
+    position: relative;
+    padding: 0;
+}
+
+.top_img {
+    width: 100%;
+}
+
+.top_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* /top */
+
+/* logo_bar */
+.wrap_logo_bar {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slideshow_logo {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.content {
+    width: 200px;
+    height: 160px;
+}
+
+.content:nth-child(1) {
+    background-color: tomato;
+}
+
+.content:nth-child(2) {
+    background-color: orange;
+}
+
+.content:nth-child(3) {
+    background-color: blue;
+}
+
+.content:nth-child(4) {
+    background-color: green;
+}
+
+/* /logo_bar */
+
+/* news */
+
+
+
+
+
+
+
+
+
+
+
+
+.news_area {
+    position: relative;
+}
+
+.news-contents{
+  background-color: gray;
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  width: 45%;
+  height: 6%;
+
+}
+
+  .news_panel {
+      background-color: white;
+      position: absolute;
+      margin-top: 5%;
+      width: 130px;
+      height: 30px;
+      text-align: center;
+      margin-left: 5%;
+      padding-top: 7px;
+}
+.bunsyou{
+
+  margin-top: 50px;
+  color: red;
+}
+
+
+
+
+.news_img {
+    width: 100%;
+}
+
+
+
+/* スライドショー */
+/* .swiper-button-prev, .swiper-button-next {
+    outline: none;
+    z-index: 1;
+    color: rgba(191, 148, 83, 1);
+
+
+}
+:root{
+    --swiper-navigation-size: 100px;
+}
+
+.swiper-container .swiper-slide {
+    position: relative;
+}
+
+.p_container {
+    font-size: 100px;
+    color: white;
+}
+
+.p_container2 {
+    font-size: 75px;
+    color: white;
+    border-bottom: solid 1px white;
+
+}
+
+.p_container3 {
+    font-size: 50px;
+    color: white;
+
+}
+
+.slideshow_button {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 35px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.ab{
+    position: relative;
+
+}
+
+.absolute{
+    position:absolute;
+
+    background-color:rgba(169,169,169,0.2);
+
+    filter:drop-shadow(.5rem .5rem 1rem rgb(170, 170, 170));
+} */
+
+.slide-img img {
+    width: 100%;
+  }
+  .swiper-slide .slide-content h1, .swiper-slide .slide-content h2, .swiper-slide .slide-content h3 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 30px;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+  }
+  .swiper-slide .slide-content p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-shadow: .5px .5px rgba(0,0,0,0.6);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  .swiper-slide .slide-content .caption {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #FFF;
+    font-size: 16px;
+    background-color: rgba(0,127,127,0.5);
+    padding: 3px 8px;
+  }
+/* /スライドショー */
+
+
+
+/* /news */
+
+/* 採用情報 */
+.recruit_area {
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+.recruit_area li{
+  list-style-type: disc;/* リストの左側に黒丸 */
+	margin-left: 24px;/* リストの左側に余白 */
+	text-align: left;
+
+}
+
+
+
+.title-fonts{
+  font-size: 24px;
+  font-weight: bold;
+  line-height:60px;
+}
+.default-fonts{
+  font-size: 18px;
+  line-height:30px;
+}
+.small-fonts{
+  font-size: 12px;
+  line-height:25px;
+}
+.recruit_info {
+    display: flex;
+}
+
+.column {
+    width: 50%;
+}
+
+.treatment {
+    margin: 25px;
+    border-width: 2px;
+    border-color: #cccccc;
+}
+
+.title {
+    background-color: silver;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.t_text {
+    padding: 10px;
+}
+
+.list {
+    list-style: inside;
+}
+
+
+
+
+
+
+/* /採用情報 */
+
+/* 行動指針 */
+
+.container {
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.guidelines_title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.guidelines_explanation {
+    font-size: 18px;
+    line-height:30px;
+}
+
+/* /行動指針 */
+
+/* 採用スケジュール */
+.flow_area {
+    background-color: #fecf5b;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flow_bar {
+    display: flex;
+    margin: auto;
+
+}
+
+.folw_box {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    margin: 50px;
+    text-align: center;
+    /* height: 150px;
+    width: 150px; */
+    border-radius: 50%;
+
+}
+
+.folw_box::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: 50%;
+    margin-top: auto;
+    margin-left: 70%;
+}
+
+
+.folw_box:last-child::before {
+    display: none;
+}
+
+.step_background {
+    position: relative;
+    background-color: #d9a31d;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    z-index: 2;
+
+}
+
+.step {
+    /* background-color:#d9a31d;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin:auto;
+        text-align: center; */
+
+}
+
+.svg_background {
+    position: relative;
+    background-color: #ffe7ae;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20%;
+    z-index: 1;
+    flex-direction: column;
+
+}
+
+.svg {
+    width: 50%;
+    margin: auto;
+
+}
+
+.flow_text {
+    position: relative;
+    margin-top: -15%;
+    z-index: 2;
+}
+
+
+/* /採用スケジュール */
+
+/* 会社概要 */
+.corp_info {
+    display: flex;
+}
+
+.table {
+    margin: auto;
+    border-collapse: collapse;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+th, td {
+    border: solid 1px #333;
+    padding: 25px
+}
+
+th {
+    background-color: #cccccc;
+}
+
+.right {
+    text-align: center;
+}
+
+
+.iframe {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+
+
+
+
+.insta_area {
+    background-color: orange;
+    height: 29%;
+    width: 100%;
+}
+
+/* /会社概要 */
+
+
+/* フォーム */
+.container {
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 50px;
+}
+
+
+.form {
+    text-align: center;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.form-input-title {
+
+}
+
+.form-input {
+    border: 2px solid gray;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.message-input {
+    border: 2px solid gray;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.Send-Button {
+    width: 150px;
+    margin-top: 50px;
+    height: 50px;
+    background-color: #2F506A;
+    color: white;
+    border-radius: 3px;
+}
+
+.Form-Button {
+    text-align: center;
+}
+
+
+.form-title {
+    margin-top: 20px;
+}
+
+.form-parts{
+    text-align: left;
+}
+
+
+
+/* /フォーム */
+
+
+/* フッター */
+.cmark {
+    text-align: center;
+    color: rgba(59, 59, 59, 1);
+}
+
+.copy {
+    margin-top: 30px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+/* /フッター */
