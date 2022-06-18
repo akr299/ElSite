@@ -124,7 +124,7 @@ li.item>a {
 }
 
 .news-contents {
-    background-color: gray;
+    /* background-color: gray; */
     position: absolute;
     top: 50%;
     right: 0%;
@@ -136,7 +136,7 @@ li.item>a {
 }
 
 .news_panel {
-    background-color: white;
+    background-color: gold;
     position: absolute;
     margin-top: 5%;
     width: 130px;
@@ -144,6 +144,7 @@ li.item>a {
     text-align: center;
     margin-left: 5%;
     padding-top: 7px;
+    z-index: 100;
 }
 
 .bunsyou {
@@ -168,13 +169,18 @@ li.item>a {
 
 /* スライドショー */
 
-.swiper{
-    height: 300px;
-    width: 600px;;
+.swiper {
+    height: 500px;
+    width: 700px;
+    /* margin-right:25px; */
 }
 
 .slide-img img {
     width: 100%;
+}
+
+.swiper-slide {
+    background-color: white;
 }
 
 .swiper-slide .slide-content h1, .swiper-slide .slide-content h2, .swiper-slide .slide-content h3 {
@@ -182,7 +188,7 @@ li.item>a {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFF;
+    color: black;
     font-size: 30px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -192,7 +198,7 @@ li.item>a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFF;
+    color: black;
     text-shadow: .5px .5px rgba(0, 0, 0, 0.6);
     margin: 0;
     padding: 0;
@@ -207,6 +213,24 @@ li.item>a {
     font-size: 16px;
     background-color: rgba(0, 127, 127, 0.5);
     padding: 3px 8px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: relative;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.swiper-button-next {
+    right: 0px;
+}
+
+.flex_box {
+    display: flex;
+    align-items: center;
+    margin:25px;
 }
 
 /* /スライドショー */
