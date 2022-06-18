@@ -119,151 +119,96 @@ li.item>a {
 /* /logo_bar */
 
 /* news */
-
-
-
-
-
-
-
-
-
-
-
-
 .news_area {
     position: relative;
 }
 
-.news-contents{
-  background-color: gray;
-  position: absolute;
-  top: 30px;
-  right: 5%;
-  width: 45%;
-  height: 6%;
+.news-contents {
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
 
 }
 
-  .news_panel {
-      background-color: white;
-      position: absolute;
-      margin-top: 5%;
-      width: 130px;
-      height: 30px;
-      text-align: center;
-      margin-left: 5%;
-      padding-top: 7px;
+.news_panel {
+    background-color: white;
+    position: absolute;
+    margin-top: 5%;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    margin-left: 5%;
+    padding-top: 7px;
 }
-.bunsyou{
 
-  margin-top: 50px;
-  color: red;
+.bunsyou {
+
+    margin-top: 50px;
+    color: red;
 }
 
 
 
 
 .news_img {
+
     width: 100%;
+}
+
+.absolute {
+    position: absolute;
 }
 
 
 
 /* スライドショー */
-/* .swiper-button-prev, .swiper-button-next {
-    outline: none;
-    z-index: 1;
-    color: rgba(191, 148, 83, 1);
 
-
+.swiper{
+    height: 300px;
+    width: 600px;;
 }
-:root{
-    --swiper-navigation-size: 100px;
-}
-
-.swiper-container .swiper-slide {
-    position: relative;
-}
-
-.p_container {
-    font-size: 100px;
-    color: white;
-}
-
-.p_container2 {
-    font-size: 75px;
-    color: white;
-    border-bottom: solid 1px white;
-
-}
-
-.p_container3 {
-    font-size: 50px;
-    color: white;
-
-}
-
-.slideshow_button {
-    position: absolute;
-    top: 80%;
-    left: 55%;
-    font-size: 15px;
-    color: white;
-    background: transparent;
-    padding: 10px 15px;
-    display: inline-block;
-    border: 2px solid white;
-    border-radius: 35px;
-    text-decoration: none;
-    z-index: 2;
-}
-
-.ab{
-    position: relative;
-
-}
-
-.absolute{
-    position:absolute;
-
-    background-color:rgba(169,169,169,0.2);
-
-    filter:drop-shadow(.5rem .5rem 1rem rgb(170, 170, 170));
-} */
 
 .slide-img img {
     width: 100%;
-  }
-  .swiper-slide .slide-content h1, .swiper-slide .slide-content h2, .swiper-slide .slide-content h3 {
+}
+
+.swiper-slide .slide-content h1, .swiper-slide .slide-content h2, .swiper-slide .slide-content h3 {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
     font-size: 30px;
-    text-shadow: 2px 2px rgba(0,0,0,0.3);
-  }
-  .swiper-slide .slide-content p {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide .slide-content p {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFF;
-    text-shadow: .5px .5px rgba(0,0,0,0.6);
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.6);
     margin: 0;
     padding: 0;
     font-size: 18px;
-  }
-  .swiper-slide .slide-content .caption {
+}
+
+.swiper-slide .slide-content .caption {
     position: absolute;
     bottom: 30px;
     right: 30px;
     color: #FFF;
     font-size: 16px;
-    background-color: rgba(0,127,127,0.5);
+    background-color: rgba(0, 127, 127, 0.5);
     padding: 3px 8px;
-  }
+}
+
 /* /スライドショー */
 
 
@@ -272,33 +217,38 @@ li.item>a {
 
 /* 採用情報 */
 .recruit_area {
-    margin-left:10%;
-    margin-right:10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
-.recruit_area li{
-  list-style-type: disc;/* リストの左側に黒丸 */
-	margin-left: 24px;/* リストの左側に余白 */
-	text-align: left;
+.recruit_area li {
+    list-style-type: disc;
+    /* リストの左側に黒丸 */
+    margin-left: 24px;
+    /* リストの左側に余白 */
+    text-align: left;
 
 }
 
 
 
-.title-fonts{
-  font-size: 24px;
-  font-weight: bold;
-  line-height:60px;
+.title-fonts {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
 }
-.default-fonts{
-  font-size: 18px;
-  line-height:30px;
+
+.default-fonts {
+    font-size: 18px;
+    line-height: 30px;
 }
-.small-fonts{
-  font-size: 12px;
-  line-height:25px;
+
+.small-fonts {
+    font-size: 12px;
+    line-height: 25px;
 }
+
 .recruit_info {
     display: flex;
 }
@@ -352,7 +302,7 @@ li.item>a {
 
 .guidelines_explanation {
     font-size: 18px;
-    line-height:30px;
+    line-height: 30px;
 }
 
 /* /行動指針 */
@@ -517,8 +467,8 @@ iframe {
 
 .form {
     text-align: center;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -526,9 +476,7 @@ iframe {
     margin-bottom: 30px;
 }
 
-.form-input-title {
-
-}
+.form-input-title {}
 
 .form-input {
     border: 2px solid gray;
@@ -564,7 +512,7 @@ iframe {
     margin-top: 20px;
 }
 
-.form-parts{
+.form-parts {
     text-align: left;
 }
 
