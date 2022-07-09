@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/setup.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
 
 </head>
 
@@ -19,6 +21,10 @@
             <div class="logo">
                 <p class="logo_text">el.</p>
             </div>
+            <button type="button" class="menu-btn">
+                <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+                <label class="h-menu_icon" for="h-menu_checkbox"><span class="hamburger-icon"></span></label>
+              </button>
             <div class="menu">
                 <ul class="navi">
                     <li class="item"> <a href="#home">ホーム</a></li>
@@ -81,17 +87,19 @@
                 <div class="flex_box">
                     <div class="swiper-button-prev"></div>
                     <div>
-                        <div class="news_panel">新着情報</div>
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="slide-content">
+                                        <div class="testtest">
+                                        <div class="news_panel"><p>新着情報</p></div>
                                         <h1>令和元年秋基本情報資格取得に向けて</h1>
-                                        <p>年二回開催される基本情報技術者試験。 </p>
-                                        <p>今年の秋は10月20日が試験日です。 </p>
-                                        <p>エルの社員たちも資格取得に向けて動き出しました。</p>
-                                        <p>隔週の土曜日はみんなで会社に集まって、資格を持っている先輩たちに教えてもらいながら勉強しています。</p>
+                                        <p class="slide-p">年二回開催される基本情報技術者試験。 </p>
+                                        <p class="slide-p">今年の秋は10月20日が試験日です。 </p>
+                                        <p class="slide-p">エルの社員たちも資格取得に向けて動き出しました。</p>
+                                        <p class="slide-p">隔週の土曜日はみんなで会社に集まって、資格を持っている先輩たちに教えてもらいながら勉強しています。</p>
                                         <div class="caption">caption 01</div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -490,6 +498,7 @@
     <!-- /フッター -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/slideshow.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
 </body>
 
 </html>

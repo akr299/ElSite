@@ -41,7 +41,7 @@ var mySwiper = new Swiper('.swiper', {
 	},
 
 	// スクロールバーを表示する場合
-	scrollbar: {
-		el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
-	}
+	// scrollbar: {
+	// 	el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
+	// }
 });
