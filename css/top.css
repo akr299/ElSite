@@ -3,7 +3,6 @@
 .margin {
     margin-left: 5px;
     margin-right: 5px;
-    /* margin:auto; */
 }
 
 body {
@@ -15,7 +14,6 @@ body {
     flex-flow: column;
     margin: auto;
     max-width: 1425px;
-    /* align-items: flex-start; */
 }
 
 .container {
@@ -35,14 +33,6 @@ body {
 .header {
     height: 50px;
     display: flex;
-    /* 縦方向の並び順*/
-    /*
-        flex-start：上揃え（デフォルト）
-        flex-end：下揃え
-        center：中央揃え
-        baseline：ベースライン
-        stretch：伸縮
-        */
     align-items: center;
 }
 
@@ -61,12 +51,10 @@ body {
 ul.navi {
     list-style: none;
     display: flex;
-    /* display: none; */
     gap: 50px;
 }
 
 li.item {
-    /* width: 140px; */
     text-align: center;
 }
 
@@ -100,7 +88,6 @@ li.item>a {
     text-align: center;
     font-size: 50px;
     color: #fff;
-    /* -webkit-text-stroke: 2px #000; */
     font-weight: 700;
     background-color: #000;
 }
@@ -175,15 +162,7 @@ li.item>a {
     position: relative;
 }
 
-.news-contents {
-    /* background-color: gray; */
-    /* position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%); */
-}
+.news-contents {}
 
 .news_panel {
     background-color: gold;
@@ -203,7 +182,6 @@ li.item>a {
     width: 100%;
     object-fit: cover;
     display: none;
-    /* visibility:hidden; */
 }
 
 .absolute {
@@ -214,20 +192,15 @@ li.item>a {
 /* スライドショー */
 
 .flex_box {
-    /* display: flex; */
     align-items: center;
-    /* margin: 25px; */
 }
 
 .swiper {
     height: 350px;
     width: 100%;
-    /* margin-right:25px; */
 }
 
-.slide-img img {
-    /* width: 100%; */
-}
+.slide-img img {}
 
 .swiper-slide {
     background-color: white;
@@ -249,7 +222,6 @@ li.item>a {
 
 .swiper-slide .slide-content .slide-p {
     color: black;
-    /* text-shadow: .5px .5px rgba(0, 0, 0, 0.6); */
     margin-bottom: 5px;
     font-size: 18px;
 }
@@ -289,7 +261,6 @@ li.item>a {
     height: 40px;
     margin: auto;
     width: 40px;
-    /* display: none; */
     visibility: hidden;
 }
 
@@ -340,7 +311,6 @@ li.item>a {
     display: flex;
     gap: 25px;
     margin: auto;
-    /* justify-content: center; */
 }
 
 .column {
@@ -353,7 +323,6 @@ li.item>a {
     border-width: 2px;
     border-color: #F0F0F0;
     max-width: 700px;
-    /* margin:auto; */
 }
 
 .title {
@@ -492,14 +461,7 @@ li.item>a {
     border-color: transparent transparent transparent #000000;
 }
 
-.step {
-    /* background-color:#d9a31d;
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        margin:auto;
-        text-align: center; */
-}
+.step {}
 
 .svg_background {
     position: relative;
@@ -510,7 +472,6 @@ li.item>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: -20%; */
     z-index: 1;
     flex-direction: column;
 }
@@ -584,8 +545,36 @@ iframe {
 
 .insta_area {
     background-color: orange;
-    height: 29%;
+    /* height: 29%; */
     width: 100%;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 50% 50%;
+}
+
+.instagram-media {
+    max-width: 50%;
+    /* height: 200px; */
+}
+
+.a_block {
+    width: 100px;
+    height: 100px;
+}
+
+.itemA {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.itemB {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.itemC {
+    grid-row: 2/ 3;
+    grid-column: 2 / 3;
 }
 
 
