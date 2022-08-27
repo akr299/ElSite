@@ -3,6 +3,8 @@
 .margin {
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 body {
@@ -20,8 +22,12 @@ body {
     font-size: 40px;
     text-decoration: underline;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
+}
+.pd{
+    padding-top: 50px;
+    padding-bottom:50px;
 }
 
 
@@ -34,14 +40,18 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
+    margin-left:25px;
+    margin-right: 25px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 .logo {}
 
 .logo_text {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Lucida Handwriting', cursive;
     font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .menu {
@@ -507,6 +517,7 @@ li.item>a {
     border-color: black;
     border-width: 1px;
     border-style: solid;
+    height: 100%;
 }
 
 th,
@@ -529,14 +540,17 @@ td {
     vertical-align: middle;
 }
 
-.iframe {
+.iframe_area {
     text-align: center;
+    flex-grow: 1;
 }
 
-iframe {
+.iframe {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     border: 0;
+    /* flex-grow: 1; */
+    height: 100%;
 }
 
 .width {
@@ -544,22 +558,43 @@ iframe {
 }
 
 .insta_area {
-    background-color: orange;
+    /* background-color: orange; */
     /* height: 29%; */
     width: 100%;
     display: grid;
-    grid-template-rows: 250px 250px;
-    grid-template-columns: 50% 50%;
+    gap: 5px;
+    /* grid-template-rows: 250px 250px;
+    grid-template-columns: 50% 50%; */
 }
 
 .instagram-media {
-    max-width: 50%;
+    /* max-width: 50%; */
     /* height: 200px; */
+    min-width: 0px !important;
+    margin:0 0 0 0 !important;
+}
+.eapps-instagram-feed-posts-inner{
+    width: 100% !important;
+}
+
+.link_panel{
+    width:100%;
+    height: 100%;
+    /* margin:auto; */
+    display:flex;
+    background-color: #cccccc;
+}
+.bbb{
+    margin:auto;
+    font-family: 'Impact';
+    color: #707070;
+    font-size: 25px;
+   
 }
 
 .a_block {
-    width: 100px;
-    height: 100px;
+    /* width: 150px; */
+    /* height: 100px; */
 }
 
 .itemA {
@@ -671,7 +706,7 @@ iframe {
 @media screen and (max-width:600px) {
     /* 共通 */
     .container {
-        margin-top: 15px;
+        /* margin-top: 15px; */
         margin-bottom: 15px;
     }
     /* /共通 */
@@ -805,7 +840,7 @@ iframe {
         font-size: 40px;
         text-decoration: underline;
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         margin-bottom: 50px;
     }
     /* /共通 */
@@ -813,6 +848,8 @@ iframe {
     .header {
         height: 80px;
         display: flex;
+        margin-left:25px;
+        margin-right: 25px;
         /* 縦方向の並び順*/
         /*
         flex-start：上揃え（デフォルト）
@@ -826,8 +863,10 @@ iframe {
     @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
     .logo {}
     .logo_text {
-        font-family: 'Sacramento', cursive;
-        font-size: 50px;
+        font-family: 'Times New Roman', cursive;
+        font-size: 75px;
+    font-style: italic;
+    font-weight: 700;
     }
     .menu {
         margin-left: auto;
@@ -1213,21 +1252,25 @@ iframe {
         vertical-align: middle;
         font-size: 20px;
     }
-    .iframe {
+    .iframe_area {
         text-align: center;
     }
-    iframe {
+    .iframe {
         width: 100%;
         height: 500px;
         border: 0;
     }
     .width {
         width: 50%;
+        flex-grow: 1;
+    }
+    .ue{
+        align-items: flex-start;
     }
     .insta_area {
-        background-color: orange;
+        /* background-color: orange;
         height: 29%;
-        width: 100%;
+        width: 100%; */
     }
     /* /会社概要 */
     /* フォーム */
