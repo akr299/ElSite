@@ -50,8 +50,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-.logo {}
-
 .logo_text {
     font-family: 'Mr Dafoe', cursive;
     /* font-family: 'Dancing Script', cursive; */
@@ -178,8 +176,6 @@ li.item>a {
     position: relative;
 }
 
-.news-contents {}
-
 .news_panel {
     background-color: gold;
     width: 130px;
@@ -215,8 +211,6 @@ li.item>a {
     height: 450px;
     width: 100%;
 }
-
-.slide-img img {}
 
 .swiper-slide {
     background-color: rgba(192, 192, 192, 0.3);
@@ -304,9 +298,6 @@ li.item>a {
 
 
 /* 採用情報 */
-
-.recruit_area {}
-
 .recruit_area li {
     list-style-type: disc;
     /* リストの左側に黒丸 */
@@ -485,8 +476,6 @@ li.item>a {
     border-color: transparent transparent transparent #000000;
 }
 
-.step {}
-
 .svg_background {
     position: relative;
     background-color: #ffe7ae;
@@ -573,10 +562,6 @@ td {
     height: 100%;
 }
 
-.width {
-    /* width: 50%; */
-}
-
 .insta_area {
     /* background-color: orange; */
     /* height: 29%; */
@@ -639,11 +624,6 @@ td {
     width: 100%;
 }
 
-.a_block {
-    /* width: 150px; */
-    /* height: 100px; */
-}
-
 .itemA {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -678,8 +658,6 @@ td {
 .contact-form {
     margin-bottom: 30px;
 }
-
-.form-input-title {}
 
 .form-input {
     border: 2px solid gray;
