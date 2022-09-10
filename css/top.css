@@ -2,7 +2,7 @@
 
 body {
     --swiper-navigation-size: 0px;
-    font-family: 'meiryo',cursive;
+    font-family: 'meiryo', cursive;
     font-size: 18px;
 }
 
@@ -43,8 +43,8 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
@@ -53,9 +53,9 @@ body {
 
 .logo_text {
     font-family: 'Mr Dafoe', cursive;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 50px;
+    /* font-weight: 400; */
 }
 
 .menu {
@@ -65,7 +65,7 @@ body {
 ul.navi {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 li.item {
@@ -598,13 +598,14 @@ td {
     position: relative;
     overflow: hidden;
     -webkit-filter: grayscale(0.6);
-	filter: gray;
-	filter: grayscale(0.6);
+    filter: gray;
+    filter: grayscale(0.6);
 }
-.link_panel:hover{
+
+.link_panel:hover {
     -webkit-filter: grayscale(0);
-		filter: none;
-		filter: grayscale(0);
+    filter: none;
+    filter: grayscale(0);
 }
 
 .bbb {
@@ -707,6 +708,24 @@ td {
     text-align: left;
 }
 
+/* NGなら赤くする */
+.form-input:focus:invalid ,.message-input:focus:invalid {
+    border: tomato 2px solid;
+}
+
+/* 操作中、入力値が正しい場合は、不正エラーを消す */
+.form-input:focus:valid + .error .invalid ,.message-input:focus:valid + .error .invalid{
+    display: none;
+}
+
+/* OKなら、その他のテキストボックス以外を緑にする */
+.form-input:focus:valid ,.message-input:focus:valid {
+    border: seagreen 2px solid;
+}
+
+input::placeholder,textarea::placeholder{
+    color:#555;
+}
 
 /* /フォーム */
 
@@ -801,6 +820,7 @@ td {
 
     li.item>a {
         color: #fff;
+        font-size: 25px;
     }
 
     /*----------------------------
@@ -905,7 +925,7 @@ td {
     /* /共通 */
     /* ヘッダー */
     .header {
-        height: 80px;
+        height: 100px;
         /* 縦方向の並び順*/
         /*
         flex-start：上揃え（デフォルト）
@@ -915,6 +935,8 @@ td {
         stretch：伸縮
         */
         align-items: center;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
@@ -922,7 +944,7 @@ td {
     .logo {}
 
     .logo_text {
-        font-size: 60px;
+        font-size: 100px;
     }
 
     .menu {
@@ -930,8 +952,7 @@ td {
     }
 
     ul.navi {
-        list-style: none;
-        display: flex;
+        gap:50px;
     }
 
     li.item {
@@ -1400,18 +1421,19 @@ td {
         /* grid-template-columns: 50% 50%; */
 
     }
+
     .bbb {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
     }
-    
+
     .link_img {
         height: 500px;
         width: 100%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
         position: absolute;
     }
 
@@ -1433,52 +1455,6 @@ td {
 
     /* /会社概要 */
     /* フォーム */
-    .form {
-        text-align: center;
-    }
-
-    .contact-form {
-        margin-bottom: 30px;
-    }
-
-    .form-input-title {}
-
-    .form-input {
-        border: 2px solid gray;
-        width: 100%;
-        height: 50px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    .message-input {
-        border: 2px solid gray;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 15px;
-    }
-
-    .Send-Button {
-        width: 150px;
-        margin-top: 50px;
-        height: 50px;
-        background-color: #2F506A;
-        color: white;
-        border-radius: 3px;
-    }
-
-    .Form-Button {
-        text-align: center;
-    }
-
-    .form-title {
-        margin-top: 20px;
-    }
-
-    .form-parts {
-        text-align: left;
-    }
-
     /* /フォーム */
     /* フッター */
     .cmark {
