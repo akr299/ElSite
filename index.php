@@ -105,7 +105,7 @@
                                             <h1>10月キャンプへ行こう！！</h1>
                                             <p class="slide-p">年二回開催されるキャンプ会 </p>
                                             <p class="slide-p">参加自由です。 </p>
-                                            <div class="caption">caption 01</div>
+                                            <!-- <div class="caption">caption 01</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -115,11 +115,12 @@
                                             <div class="news_panel">
                                                 <p>新着情報</p>
                                             </div>
-                                            <h1>令和元年秋基本情報資格取得に向けて</h1>
-                                            <p class="slide-p">年二回開催される基本情報技術者試験。 </p>
-                                            <p class="slide-p">今年の秋は10月20日が試験日です。 </p>
-                                            <p class="slide-p">エルの社員たちも資格取得に向けて動き出しました。</p>
-                                            <div class="caption">caption 02</div>
+                                            <h1>エルで一緒に働きませんか？</h1>
+                                            <p class="slide-p">弊社では「楽しみながら手に職を付けたい方」を募集しております。 </p>
+                                            <p class="slide-p">┗プログラムの経験はもちろん、パソコンの打ち方を知らない、 </p>
+                                            <p class="slide-p">電源がどこにあるかもわからないという方、歓迎します！</p>
+                                            <p class="slide-p">◎IT企業の経験はもちろん、社会人経験、ブランクも問いません。</p>
+                                            <!-- <div class="caption">caption 02</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -129,12 +130,12 @@
                                             <div class="news_panel">
                                                 <p>新着情報</p>
                                             </div>
-                                            <h1>クラブ部員求む！</h1>
-                                            <p class="slide-p"></p>
-                                            <p class="slide-p">keitahatです。 </p>
+                                            <h1>令和4年秋基本情報資格取得に向けて！</h1>
+                                            <p class="slide-p">年二回開催される基本情報技術者試験。</p>
                                             <p class="slide-p">エルの社員たちも資格取得に向けて動き出しました。</p>
                                             <p class="slide-p">隔週の土曜日はみんなで会社に集まって、資格を持っている先輩たちに教えてもらいながら勉強しています。</p>
-                                            <div class="caption">caption 03</div>
+                                            <p class="slide-p">目指せ国家資格！勉強頑張るぞ！！</p>
+                                            <!-- <div class="caption">caption 03</div> -->
                                         </div>
                                     </div>
                                 </div>
