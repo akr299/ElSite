@@ -33,12 +33,12 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "http://192.168.11.169:5500/"; //本番適用時変更
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "bookreader199@gmail.com";
+$to = "bookreader199@gmail.com";//本番適用時変更
 
 //送信元メールアドレス（管理者宛て、及びユーザー宛メールの送信元メールアドレスです）
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
 //管理者宛てメールの返信先（reply）はユーザーのメールアドレスになります。
-$from = "akira.ohira@el-ltd.co.jp";
+$from = "akira.ohira@el-ltd.co.jp";//本番適用時変更
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
@@ -321,8 +321,8 @@ form input[type="submit"], form input[type="reset"], form input[type="button"] {
 <?php }else{ ?>
 <h3>確認画面</h3>
 <p align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
-<!-- <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST"> 本番適用時変更2 -->
-<form action="<?php echo ("mail.php"); ?>" method="POST">
+<!-- <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">  --><!-- 本番適用時変更2 -->
+<form action="<?php echo ("mail.php"); ?>" method="POST"><!-- 本番適用時削除 -->
 <table class="formTable">
 <?php echo confirmOutput($_POST);//入力内容を表示?>
 </table>
