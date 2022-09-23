@@ -2,7 +2,7 @@
 
 body {
     --swiper-navigation-size: 0px;
-    font-family: 'meiryo', cursive;
+    font-family: 'Meiryo', 'メイリオ', 'Yu Gothic UI';
     font-size: 18px;
     min-width: 270px;
 }
@@ -48,7 +48,7 @@ body {
     margin-right: 5px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 
 .logo_text {
     font-family: 'Mr Dafoe', cursive;
