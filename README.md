@@ -20,7 +20,7 @@
     <!-- <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST"> 本番適用時変更2 -->　コメントアウト解除
     <form action="<?php echo ("mail.php"); ?>" method="POST">　削除
     ```
-## ST
+## ST　サーバの設定方法
 - PHPではメール送信のための関数が用意されています。
 
     用意された関数ではメール送信の際に使用するSMTPサーバ名とポート番号を「php.ini」ファイルで設定された値を読み込んで利用します(PHPスクリプトでは指定できないようです)。
