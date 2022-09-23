@@ -3,17 +3,23 @@
 ## 本番適用時変更点
 - URL変更
 - mail.php
-    - $site_top = "http://192.168.11.169:5500/"; //本番適用時変更
+    ```
+    33行目
+    $site_top = "http://192.168.11.169:5500/"; //本番適用時変更
 
-    - //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 
+    36行目
+    //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 
         例 $to = "aa@aa.aa,bb@bb.bb";)
         $to = "bookreader199@gmail.com";　変更
-    - //管理者宛てメールの返信先（reply）はユーザーのメールアドレスになります。
+
+    41行目
+    //管理者宛てメールの返信先（reply）はユーザーのメールアドレスになります。
         $from = "bookreader0299@gmail.com";　変更
 
-    - <!-- <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST"> 本番適用時変更2 -->　コメントアウト解除
-        <form action="<?php echo ("mail.php"); ?>" method="POST">　削除
-
+    324行目
+    <!-- <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST"> 本番適用時変更2 -->　コメントアウト解除
+    <form action="<?php echo ("mail.php"); ?>" method="POST">　削除
+    ```
 ## ST
 - PHPではメール送信のための関数が用意されています。
 
@@ -25,18 +31,26 @@
     
     747行目付近にあります。
 
-    [mail function]
+    php.ini
     ```
+    [mail function]
+
     ; For Win32 only.
+
     SMTP = smtp.example.jp
+
     smtp_port = 25
 
     ; For Win32 only.
     sendmail_from = peke@example.jp
 
     SMTP=localhost //localhostのままでOKです。
+
     smtp_port=587 //サブミッションポートを登録します。
-    sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t" //sendmail.exeのパスを登録します。
+
+    sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t" //
+
+    sendmail.exeのパスを登録します。
     ```
 - gmailの場合
     アカウントの編集画面からセキュリティを選択します。
