@@ -14,9 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link rel="icon" href="/img/favicon3.ico?v=2" type="image/x-icon">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
-
-
 </head>
 
 
@@ -28,7 +25,6 @@
                 <p class="logo_text">el.</p>
             </div>
             <button type="button" class="menu-btn">
-                <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
                 <label class="h-menu_icon" for="h-menu_checkbox"><span class="hamburger-icon"></span></label>
             </button>
             <div class="menu">
@@ -57,32 +53,6 @@
 
         <!-- ロゴバー -->
         <div class="wrap_logo_bar">
-            <!-- <div class="logo_bar">
-                <ul class="slideshow_logo">
-                    <li class="content">tomato</li>
-                    <li class="content">orange</li>
-                    <li class="content">blue</li>
-                    <li class="content">green</li>
-                </ul>
-            </div>
-
-            <div class="logo_bar">
-                <ul class="slideshow_logo">
-                    <li class="content">tomato</li>
-                    <li class="content">orange</li>
-                    <li class="content">blue</li>
-                    <li class="content">green</li>
-                </ul>
-            </div>
-
-            <div class="logo_bar">
-                <ul class="slideshow_logo">
-                    <li class="content">tomato</li>
-                    <li class="content">orange</li>
-                    <li class="content">blue</li>
-                    <li class="content">green</li>
-                </ul>
-            </div> -->
         </div>
         <!-- ロゴバー -->
 
@@ -467,9 +437,6 @@
                 </div>
                 <div class="column width">
                     <div class="iframe_area">
-                        <!-- <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.4848425552003!2d136.905191329222!3d35.15813279876996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370cbaf1149a7%3A0xc8e9b9a1fdbaabcd!2z44CSNDYwLTAwMTEg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy65aSn6aCI77yT5LiB55uu77yT77yR4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1632126307214!5m2!1sja!2sjp"
-                        allowfullscreen loading="lazy"></iframe> -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.4848425552003!2d136.905191329222!3d35.15813279876996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x600370cbaf1149a7%3A0xc8e9b9a1fdbaabcd!2z44CSNDYwLTAwMTEg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy65aSn6aCI77yT5LiB55uu77yT77yR4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1632126307214!5m2!1sja!2sjp"
                             allowfullscreen loading="lazy" class="iframe"></iframe>
