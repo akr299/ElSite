@@ -2,7 +2,7 @@
 
 body {
     --swiper-navigation-size: 0px;
-    font-family: 'meiryo', cursive;
+    font-family: 'Meiryo', 'メイリオ', 'Yu Gothic UI';
     font-size: 18px;
     min-width: 270px;
 }
@@ -47,8 +47,6 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 .logo_text {
     font-family: 'Mr Dafoe', cursive;
@@ -139,7 +137,6 @@ li.item>a {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-100%);
     }
@@ -282,12 +279,14 @@ li.item>a {
     background-image: url("../img/04_next.svg");
 }
 
+
 /* ページネーション */
-.swiper-horizontal > .swiper-pagination-bullets,
+
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0px;
+    bottom: 0px;
 }
 
 
@@ -298,6 +297,7 @@ li.item>a {
 
 
 /* 採用情報 */
+
 .recruit_area li {
     list-style-type: disc;
     /* リストの左側に黒丸 */
@@ -547,7 +547,6 @@ td {
     text-align: center;
     flex-grow: 1;
     height: 250px;
-
 }
 
 .ue {
@@ -615,7 +614,6 @@ td {
     white-space: nowrap;
     -webkit-text-stroke: 0.5px darkslategray;
     text-stroke: 0.5px darkslategray;
-
 }
 
 .link_img {
@@ -695,19 +693,25 @@ td {
     text-align: left;
 }
 
+
 /* NGなら赤くする */
+
 .form-input:focus:invalid,
 .message-input:focus:invalid {
     border: tomato 2px solid;
 }
 
+
 /* 操作中、入力値が正しい場合は、不正エラーを消す */
+
 .form-input:focus:valid+.error .invalid,
 .message-input:focus:valid+.error .invalid {
     display: none;
 }
 
+
 /* OKなら、その他のテキストボックス以外を緑にする */
+
 .form-input:focus:valid,
 .message-input:focus:valid {
     border: seagreen 2px solid;
@@ -717,6 +721,7 @@ input::placeholder,
 textarea::placeholder {
     color: #555;
 }
+
 
 /* /フォーム */
 
@@ -737,6 +742,7 @@ textarea::placeholder {
 
 /* /フッター */
 
+
 /* スマホ */
 
 @media screen and (min-width:800px) {
@@ -750,19 +756,16 @@ textarea::placeholder {
 /* スマホ */
 
 @media screen and (max-width:600px) {
-
     /* 共通 */
     .container {
         /* margin-top: 15px; */
         margin-bottom: 15px;
     }
-
     /* /共通 */
     /* 採用スケジュール */
     .flow_bar {
         margin-top: 25px;
     }
-
     /* /採用スケジュール */
     /* 会社概要 */
     th,
@@ -770,12 +773,10 @@ textarea::placeholder {
         border: solid 1px #333;
         padding: 5px;
     }
-
     /* /会社概要 */
     ul.navi {
         flex-flow: column;
     }
-
     /*ハンバーガーメニュー*/
     .h-menu_icon {
         display: inline-block;
@@ -784,7 +785,6 @@ textarea::placeholder {
         vertical-align: middle;
         position: relative;
     }
-
     /*3本線*/
     .hamburger-icon,
     .hamburger-icon::before,
@@ -800,20 +800,16 @@ textarea::placeholder {
         background: white;
         cursor: pointer;
     }
-
     .hamburger-icon:before {
         top: 10px;
     }
-
     .hamburger-icon:after {
         top: 20px;
     }
-
     li.item>a {
         color: #fff;
         font-size: 25px;
     }
-
     /*----------------------------
 * メニュー開閉ボタン
 *----------------------------*/
@@ -830,7 +826,6 @@ textarea::placeholder {
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
     }
-
     /*----------------------------
   * メニュー本体
   *----------------------------*/
@@ -847,7 +842,6 @@ textarea::placeholder {
         justify-content: center;
         background: #555;
     }
-
     .item {
         width: 100%;
         height: auto;
@@ -856,7 +850,6 @@ textarea::placeholder {
         color: #fff;
         box-sizing: border-box;
     }
-
     /*----------------------------
   * アニメーション部分
   *----------------------------*/
@@ -865,17 +858,17 @@ textarea::placeholder {
         transform: translateX(100vw);
         transition: all .3s linear;
     }
-
     /* アニメーション後のメニューの状態 */
     .menu.is-active {
         transform: translateX(0);
     }
 }
+
 @media screen and (min-width:365px) {
     .swiper {
         height: 350px;
         width: 100%;
-    }    
+    }
 }
 
 
@@ -888,65 +881,51 @@ textarea::placeholder {
     }
 }
 
+
 /* PC */
 
 @media screen and (min-width:880px) {
-
     /* 共通 */
     body {
         font-size: 18px;
     }
-
     .margin {
         margin-left: 25px;
         margin-right: 25px;
     }
-
     /* /共通 */
-
     /* ヘッダー */
     .header {
         height: 100px;
         margin-left: 25px;
         margin-right: 25px;
     }
-
     .logo_text {
         font-size: 100px;
     }
-
     ul.navi {
         gap: 50px;
     }
-
     li.item>a {
         font-size: 20px;
         z-index: 100;
     }
-
     li.item>a:hover {
         color: #d9a31d;
         text-decoration: underline;
     }
-
     /* /ヘッダー */
-
     /* top */
     .top_text {
         font-size: 50px;
     }
-
     /* /top */
-
     /* logo_bar */
-
     .content {
         width: 200px;
         height: 160px;
     }
-
     /* /logo_bar */
-
     /* news */
     .news-contents {
         /* background-color: gray; */
@@ -957,176 +936,133 @@ textarea::placeholder {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
     }
-
     .news_panel {
         margin-bottom: 50px;
         font-size: 20px;
         font-weight: 700;
     }
-
     .news_img {
         display: block;
     }
-
     /* news/スライドショー */
     .flex_box {
         display: flex;
         margin: 25px;
     }
-
     .swiper {
         height: 500px;
         width: 700px;
         /* margin-right:25px; */
     }
-
     .slide-img img {
         width: 100%;
     }
-
     .swiper-slide {
         background-color: white;
         padding-top: 25px;
         padding-left: 25px;
         padding-right: 25px;
     }
-
     .swiper-slide .slide-content h1,
     .swiper-slide .slide-content h2,
     .swiper-slide .slide-content h3 {
         margin-bottom: 50px;
     }
-
     .swiper-slide .slide-content .slide-p {
         margin-bottom: 25px;
     }
-
     .swiper-slide .slide-content .caption {
         right: 30px;
-
     }
-
     .swiper-button-prev::after,
     .swiper-button-next::after {
         visibility: visible;
     }
-
     /* /news/スライドショー */
-
     /* /news */
-
     /* 採用情報 */
     .recruit_area li {
         font-size: 18px;
     }
-
     .recruit_info {
         justify-content: center;
     }
-
     .treatment {
         font-size: 18px;
     }
-
     .title {
         padding: 25px;
         font-size: 20px;
     }
-
     .t_text {
         padding: 25px;
     }
-
     .t_text>p,
     .t_text>li {
         line-height: 200%;
     }
-
     /* /採用情報 */
-
     /* 行動指針 */
-
     /* /行動指針 */
-
     /* 採用スケジュール */
     .step_background {
         height: 60px;
         width: 60px;
     }
-
     .step {
         font-size: 20px;
         font-weight: 700;
     }
-
     .svg_background {
         height: 200px;
         width: 200px;
     }
-
     .svg {
         width: 50%;
     }
-
     /* /採用スケジュール */
-
     /* 会社概要 */
     .corp_info {
         display: flex;
     }
-
     .right {
         font-size: 20px;
     }
-
     .iframe_area {
         height: initial;
     }
-
     .ue {
         align-items: flex-start;
     }
-
     .iframe {
         height: 500px;
     }
-
     .width {
         width: 50%;
         flex-grow: 1;
     }
-
     .link_img {
         height: 500px;
-
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
     }
-
     .itemA {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
     }
-
     .itemB {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
     }
-
     .itemC {
         grid-row: 2/ 3;
         grid-column: 2 / 3;
     }
-
     /* /会社概要 */
-
     /* フォーム */
-
     /* /フォーム */
-
     /* フッター */
-
     /* /フッター */
 }
